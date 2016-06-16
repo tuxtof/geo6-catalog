@@ -1,5 +1,5 @@
 name: Wordpress volume
 description: |
-  Wordpress with nutnaix backend volume
+  Wordpress with Nutanix volume backend
 version: 1
-category: Test
+category: App
