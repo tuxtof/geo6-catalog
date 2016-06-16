@@ -2,12 +2,13 @@
   name: "Wordpress volume nutanix"
   version: "1"
   description: "All the things"
-    questions:
+  questions:
     - variable: "VOL_NAME"
       label: "String"
       required: true
       default: "mydb"
       type: "string"
+
 db:
   scale: 1
 wordpress:
