@@ -6,7 +6,7 @@
     - variable: "VOL_NAME"
       label: "name of the volume"
       required: true
-      default: "mydb"
+      default: ""
       type: "string"
 
 db:
