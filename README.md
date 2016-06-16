@@ -1,3 +1,3 @@
-# QA Catalog
+# Geo6 Catalog
 
-Templates of use for testing Rancher Catalog.
+Test Rancher Catalog.
