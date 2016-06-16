@@ -1,0 +1,23 @@
+db:
+  environment:
+    MYSQL_ROOT_PASSWORD: nutanix
+  labels:
+    io.rancher.container.pull_image: always
+  tty: true
+  image: mariadb
+  volumes:
+  - ${VOL_NAME}:/var/lib/mysql
+  stdin_open: true
+  volume_driver: nutanix
+wordpress:
+  ports:
+  - 80:80/tcp
+  environment:
+    WORDPRESS_DB_PASSWORD: nutanix
+  labels:
+    io.rancher.container.pull_image: always
+  tty: true
+  image: wordpress
+  links:
+  - db:mysql
+  stdin_open: true
