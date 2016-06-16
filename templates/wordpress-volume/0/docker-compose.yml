@@ -9,9 +9,9 @@ db:
   - ${VOL_NAME}:/var/lib/mysql
   stdin_open: true
   volume_driver: nutanix
-wordpress:
-  expose:
-  - "80"
+www:
+  ports:
+  - 80:80/tcp
   environment:
     WORDPRESS_DB_PASSWORD: nutanix
   labels:
