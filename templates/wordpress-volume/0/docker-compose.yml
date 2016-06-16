@@ -6,7 +6,7 @@ db:
   tty: true
   image: mariadb
   volumes:
-  - mariadata:/var/lib/mysql
+  - ${VOL_NAME}:/var/lib/mysql
   stdin_open: true
   volume_driver: nutanix
 wordpress:
