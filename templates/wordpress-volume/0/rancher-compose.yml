@@ -4,7 +4,7 @@
   description: "All the things"
   questions:
     - variable: "VOL_NAME"
-      label: "name of the volume"
+      label: "name of the Nutanix volume to store db data"
       required: true
       default: ""
       type: "string"
