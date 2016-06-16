@@ -9,7 +9,7 @@ db:
   - ${VOL_NAME}:/var/lib/mysql
   stdin_open: true
   volume_driver: nutanix
-www:
+wordpress:
   expose:
   - "80"
   environment:
