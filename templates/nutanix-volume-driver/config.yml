@@ -1,0 +1,5 @@
+name: Nutanix Volume Driver
+description: |
+  Volume Driver for Nutanix volume group
+version: 1
+category: Storage

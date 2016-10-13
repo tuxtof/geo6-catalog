@@ -1,0 +1,30 @@
+.catalog:
+  name: "Wordpress volume nutanix"
+  version: "1"
+  description: "All the things"
+  questions:
+    - variable: "PRISM_IP"
+      label: "Cluster Virtual IP Address"
+      required: true
+      default: ""
+      type: "string"
+    - variable: "DATASERVICES_IP"
+      label: "External Data Services IP address"
+      required: true
+      default: ""
+      type: "string"
+    - variable: "PRISM_USERNAME"
+      label: "Prism admin username"
+      required: true
+      default: "admin"
+      type: "string"
+    - variable: "PRISM_PASSWORD"
+      label: "Prism admin password"
+      required: true
+      default: "nutanix/4u"
+      type: "string"
+    - variable: "DEFAULT_CONTAINER"
+      label: "name of the container to store volume"
+      required: true
+      default: "default"
+      type: "string"
