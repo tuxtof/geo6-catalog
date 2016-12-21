@@ -1,6 +1,6 @@
 .catalog:
   name: "Wordpress volume nutanix"
-  version: "1"
+  version: 1
   description: "All the things"
   questions:
     - variable: "PRISM_IP"
