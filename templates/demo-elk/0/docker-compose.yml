@@ -1,8 +1,7 @@
 version: '2'
 volumes:
   logstash-etc:
-    external: true
-    driver: rancher-nfs
+    external: false
 services:
   logstash:
     image: logstash
