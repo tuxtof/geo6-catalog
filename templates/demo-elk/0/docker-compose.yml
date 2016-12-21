@@ -1,0 +1,43 @@
+version: '2'
+volumes:
+  logstash-etc:
+    external: true
+    driver: rancher-nfs
+services:
+  logstash:
+    image: logstash
+    stdin_open: true
+    volumes:
+    - logstash-etc:/etc/logstash
+    tty: true
+    links:
+    - elasticsearch:elasticsearch
+    ports:
+    - 5514:5514/tcp
+    - 5514:5514/udp
+    - 5043:5043/tcp
+    command:
+    - -f
+    - /etc/logstash/conf.d/
+    - --config.reload.automatic
+    labels:
+      io.rancher.container.pull_image: always
+  elasticsearch:
+    image: elasticsearch
+    stdin_open: true
+    tty: true
+    ports:
+    - 9200:9200/tcp
+    - 9300:9300/tcp
+    labels:
+      io.rancher.container.pull_image: always
+  kibana:
+    image: kibana
+    stdin_open: true
+    tty: true
+    links:
+    - elasticsearch:elasticsearch
+    ports:
+    - 5601:5601/tcp
+    labels:
+      io.rancher.container.pull_image: always

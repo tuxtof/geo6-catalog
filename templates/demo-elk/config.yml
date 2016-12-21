@@ -1,0 +1,5 @@
+name: GEo ELK Demo
+description: |
+  Demo of ELK stack
+version: 1
+category: Monitoring

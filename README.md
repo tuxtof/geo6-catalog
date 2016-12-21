@@ -1,3 +1,3 @@
 # Geo6 Catalog
 
-Test Rancher Catalog.
+Geo6 Rancher Catalog.
