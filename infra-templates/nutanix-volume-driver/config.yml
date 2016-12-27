@@ -1,6 +1,6 @@
-name: Nutanix Volume Driver
+name: Nutanix ABS
 description: |
-  Volume Driver for Nutanix volume group
+  Docker volume plugin for Nutanix ABS
 version: 1
 category: Storage
 labels:
