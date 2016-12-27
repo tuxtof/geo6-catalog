@@ -4,5 +4,5 @@ description: |
 version: 1
 category: Storage
 labels:
-  io.rancher.certified: nutanix
+  io.rancher.certified: Nutanix
   io.rancher.orchestration.supported: 'cattle,swarm'
