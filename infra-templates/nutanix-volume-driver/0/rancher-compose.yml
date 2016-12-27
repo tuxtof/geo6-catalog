@@ -1,5 +1,5 @@
 .catalog:
-  name: "Nutanix volume driver"
+  name: "Nutanix ABS"
   version: "1"
   description: "All the things"
   questions:

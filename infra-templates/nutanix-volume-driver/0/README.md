@@ -1,6 +1,6 @@
-# Volume Driver for Nutanix volume group
+# Nutanix ABS
 
 
 ### Info:
 
- Volume Driver for Nutanix volume group
+ Docker volume plugin for Nutanix ABS
